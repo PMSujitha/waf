@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-24T15:46:15 IST" name="WAF Test Suite" finished-at="2024-10-24T15:51:07 IST" duration-ms="292142">
+    <groups>
+    </groups>
+    <test started-at="2024-10-24T15:46:15 IST" name="Login Test case" finished-at="2024-10-24T15:47:54 IST" duration-ms="99755">
+      <class name="com.waf.testcases.TestLogin">
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:com.waf.testcases.TestLogin@58a9760d]" started-at="2024-10-24T15:46:15 IST" name="browserLaunch" finished-at="2024-10-24T15:46:29 IST" duration-ms="14406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="verifyLogin()[pri:0, instance:com.waf.testcases.TestLogin@58a9760d]" started-at="2024-10-24T15:46:29 IST" name="verifyLogin" finished-at="2024-10-24T15:47:53 IST" duration-ms="84172" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [https://staging.prophaze.com/home] but found [https://staging.prophaze.com/home]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [https://staging.prophaze.com/home] but found [https://staging.prophaze.com/home]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1581)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2197)
+at org.testng.Assert.assertNotEquals(Assert.java:2219)
+at com.waf.testcases.TestLogin.signout(TestLogin.java:94)
+at com.waf.testcases.TestLogin.verifyLogin(TestLogin.java:161)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.waf.testcases.TestLogin@58a9760d]" started-at="2024-10-24T15:47:53 IST" name="closeBrowser" finished-at="2024-10-24T15:47:54 IST" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.waf.testcases.TestLogin -->
+    </test> <!-- Login Test case -->
+    <test started-at="2024-10-24T15:47:55 IST" name="Onboard Test case" finished-at="2024-10-24T15:50:24 IST" duration-ms="149428">
+      <class name="com.waf.testcases.TestOnBoard">
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:com.waf.testcases.TestOnBoard@6236eb5f]" started-at="2024-10-24T15:47:55 IST" name="browserLaunch" finished-at="2024-10-24T15:47:59 IST" duration-ms="4956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="verifyOnboarding()[pri:0, instance:com.waf.testcases.TestOnBoard@6236eb5f]" started-at="2024-10-24T15:47:59 IST" name="verifyOnboarding" finished-at="2024-10-24T15:50:23 IST" duration-ms="143594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnboarding -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.waf.testcases.TestOnBoard@6236eb5f]" started-at="2024-10-24T15:50:23 IST" name="closeBrowser" finished-at="2024-10-24T15:50:24 IST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.waf.testcases.TestOnBoard -->
+    </test> <!-- Onboard Test case -->
+    <test started-at="2024-10-24T15:50:24 IST" name="Bot Mitigation Test case" finished-at="2024-10-24T15:51:07 IST" duration-ms="42834">
+      <class name="com.waf.testcases.TestBotMitigation">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:com.waf.testcases.TestBotMitigation@7748410a]" started-at="2024-10-24T15:46:14 IST" name="fileSetup" finished-at="2024-10-24T15:46:15 IST" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:com.waf.testcases.TestBotMitigation@7748410a]" started-at="2024-10-24T15:50:24 IST" name="browserLaunch" finished-at="2024-10-24T15:50:29 IST" duration-ms="5059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="verifyBotMitigation()[pri:0, instance:com.waf.testcases.TestBotMitigation@7748410a]" started-at="2024-10-24T15:50:29 IST" name="verifyBotMitigation" finished-at="2024-10-24T15:51:06 IST" duration-ms="36735" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: wafauto.kubewaf.com
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: wafauto.kubewaf.com
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+at com.waf.testcases.TestBotMitigation.selectCluster(TestBotMitigation.java:96)
+at com.waf.testcases.TestBotMitigation.verifyBotMitigation(TestBotMitigation.java:210)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBotMitigation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.waf.testcases.TestBotMitigation@7748410a]" started-at="2024-10-24T15:51:06 IST" name="closeBrowser" finished-at="2024-10-24T15:51:07 IST" duration-ms="1011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.waf.testcases.TestBotMitigation@7748410a]" started-at="2024-10-24T15:51:07 IST" name="tearDown" finished-at="2024-10-24T15:51:08 IST" duration-ms="998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.waf.testcases.TestBotMitigation -->
+    </test> <!-- Bot Mitigation Test case -->
+  </suite> <!-- WAF Test Suite -->
+</testng-results>

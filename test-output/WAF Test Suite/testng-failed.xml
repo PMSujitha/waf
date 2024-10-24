@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WAF Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login Test case(failed)">
+    <classes>
+      <class name="com.waf.testcases.TestLogin">
+        <methods>
+          <include name="fileSetup"/>
+          <include name="verifyLogin"/>
+          <include name="closeBrowser"/>
+          <include name="browserLaunch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.waf.testcases.TestLogin -->
+    </classes>
+  </test> <!-- Login Test case(failed) -->
+  <test thread-count="5" name="Bot Mitigation Test case(failed)">
+    <classes>
+      <class name="com.waf.testcases.TestBotMitigation">
+        <methods>
+          <include name="fileSetup"/>
+          <include name="verifyBotMitigation"/>
+          <include name="closeBrowser"/>
+          <include name="browserLaunch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.waf.testcases.TestBotMitigation -->
+    </classes>
+  </test> <!-- Bot Mitigation Test case(failed) -->
+</suite> <!-- Failed suite [WAF Test Suite] -->
